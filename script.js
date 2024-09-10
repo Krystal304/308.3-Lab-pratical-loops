@@ -6,41 +6,24 @@
 // Accomplish the following:
 // Loop through all numbers from 1 to 100.
 
-// for (let i = 1 ; i <= 100; i ++) {
-//     console.log (i)
-// }
+for (let i = 1; i<= 100; i++) {
+    // not div by 3 or 5
+    if  (i % 3 ==0 && i % 5 ==0 )
+        console.log ('fizz buzz')
+    // of a number is divisible by 3
+    if (i % 3 == 0) {
+        console.log ('fizz')
+        // div by 5
+    } else if (i % 5 == 0) {
+        console.log ('buzz')
+        // div by 3 and 5
+    } else {
+        console.log(i)
+    }
+    
+}
 
-// // If a number is divisible by 3, log “Fizz.”
-// for ( let i = 1; i <= 100; i ++){
 
-//     if (i % 3 == 0) {
-//         console.log ('fizz')
-//     }
-// }
-
-
-// // If a number is divisible by 5, log “Buzz.”
-
-// for ( let i = 1; i <= 100; i ++){
-
-//     if (i % 5 == 0) {
-//         console.log ('buzz')
-//     }
-// }
-// // If a number is divisible by both 3 and 5, log “Fizz Buzz.”
-
-// for ( let i = 1; i <= 100; i ++) {
-//     if (i % 3 ==0 && i % 5 ==0 )
-//        console.log ('fizz buz')
-   
-//    }
-// // If a number is not divisible by either 3 or 5, log the number.
-// for (let i = 1 ; i <= 100; i ++) {
-//     if (i % 3 !=0 && i % 5 !=0)
-//         console.log (i)
-// }
-
-// Remember to commit your solution once it is working.
 
 // Part 2: Prime Time
 // Context: A prime number is any whole number greater 
@@ -60,7 +43,7 @@
 
 // As soon as you find the prime number, log that number and exit the loop.
 
-let n = 11
+
 
 
 //     while (i % 1 == 0);
