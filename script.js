@@ -6,39 +6,39 @@
 // Accomplish the following:
 // Loop through all numbers from 1 to 100.
 
-for (let i = 1 ; i <= 100; i ++) {
-    console.log (i)
-}
+// for (let i = 1 ; i <= 100; i ++) {
+//     console.log (i)
+// }
 
-// If a number is divisible by 3, log “Fizz.”
-for ( let i = 1; i <= 100; i ++){
+// // If a number is divisible by 3, log “Fizz.”
+// for ( let i = 1; i <= 100; i ++){
 
-    if (i % 3 == 0) {
-        console.log ('fizz')
-    }
-}
+//     if (i % 3 == 0) {
+//         console.log ('fizz')
+//     }
+// }
 
 
-// If a number is divisible by 5, log “Buzz.”
+// // If a number is divisible by 5, log “Buzz.”
 
-for ( let i = 1; i <= 100; i ++){
+// for ( let i = 1; i <= 100; i ++){
 
-    if (i % 5 == 0) {
-        console.log ('buzz')
-    }
-}
-// If a number is divisible by both 3 and 5, log “Fizz Buzz.”
+//     if (i % 5 == 0) {
+//         console.log ('buzz')
+//     }
+// }
+// // If a number is divisible by both 3 and 5, log “Fizz Buzz.”
 
-for ( let i = 1; i <= 100; i ++) {
-    if (i % 3 ==0 && i % 5 ==0 )
-       console.log ('fizz buz')
+// for ( let i = 1; i <= 100; i ++) {
+//     if (i % 3 ==0 && i % 5 ==0 )
+//        console.log ('fizz buz')
    
-   }
-// If a number is not divisible by either 3 or 5, log the number.
-for (let i = 1 ; i <= 100; i ++) {
-    if (i % 3 !=0 && i % 5 !=0)
-        console.log (i)
-}
+//    }
+// // If a number is not divisible by either 3 or 5, log the number.
+// for (let i = 1 ; i <= 100; i ++) {
+//     if (i % 3 !=0 && i % 5 !=0)
+//         console.log (i)
+// }
 
 // Remember to commit your solution once it is working.
 
@@ -53,10 +53,52 @@ for (let i = 1 ; i <= 100; i ++) {
 
 // Write a script that accomplishes the following:
 // Declare an arbitrary number, n.
+
+
 // Create a loop that searches for the next prime number, starting at 
 // n and incrementing from there.
+
 // As soon as you find the prime number, log that number and exit the loop.
+
+let n = 11
+
+
+//     while (i % 1 == 0);
+    
+//     if (i % 2 == 0) {
+//         break;
+//     }
+//     console.log (i)
+//  }
+
 
 // Part 3: Feeling Loopy
 // 
-// 
+// what do we know?
+        // cells are separated by commas
+        // rows are separted by \n escape
+        // 4 cells per row
+        // no escape char except for \4
+        // console.log(cell1, cell2, cell3, cell4);
+let str = 'ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26'
+
+let cell = ''
+
+let row = ''
+
+
+
+for (let char of str){ 
+   if(char == ',') {
+    row = row + cell + ' '
+    cell = ''
+   } else if ( char == '\n'){
+    row+=cell
+   console.log (row) 
+   row = ''
+   cell =''
+
+   } else { 
+    cell += char
+   }
+}
